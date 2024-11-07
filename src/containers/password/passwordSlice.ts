@@ -25,7 +25,12 @@ const passwordSlice = createSlice({
       state.input = state.input.slice(0, -1);
     },
     checkPassword: (state) => {
-      state.isAccessGranted = state.input === state.correctPin;
+      if (state.input === state.correctPin) {
+        state.isAccessGranted = true;
+      } else {
+        state.isAccessGranted = false;
+        state.input = '';
+      }
     },
     reset: (state) => {
       state.input = '';
