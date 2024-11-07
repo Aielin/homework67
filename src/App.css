@@ -1,3 +1,9 @@
+body{
+  background-image: url('https://img.freepik.com/premium-photo/rock-metal-dark-background_87720-61583.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .app-container {
   display: flex;
   flex-direction: column;
